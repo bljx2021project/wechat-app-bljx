@@ -1,0 +1,28 @@
+<view class="container">
+  <form bindsubmit="addBuyerBasics">
+  <text>姓名</text>
+  <input name="buyerID" placeholder="请输入姓名"></input>
+  <text>联系方式</text>
+  <input name="buyerPhone" placeholder="请输入手机号或微信"></input>
+  <text>电脑型号</text>
+  <input name="buyerName" placeholder="请输入电脑型号"></input>
+  <text>问题描述</text>
+  <input name="buyerWeixin" placeholder="请输入问题描述"></input>
+  <text>……</text>
+  <input name="buyerPassword" placeholder="请输入……"></input>
+  <text>……</text>
+  <input name="buyerPassword" placeholder="请输入……"></input>
+  <text>……</text>
+  <input name="buyerPassword" placeholder="请输入……"></input>
+  <text>……</text>
+  <input name="buyerPassword" placeholder="请输入……"></input>
+  <text>……</text>
+  <input name="buyerPassword" placeholder="请输入……"></input>
+  <text>……</text>
+  <input name="buyerPassword" placeholder="请输入……"></input>
+  <text>……</text>
+  <input name="buyerPassword" placeholder="请输入……"></input>
+  <button type="primary" form-type="submit">提交</button>
+  <button type="default" form-type="reset">清空</button>
+  </form>
+</view>
