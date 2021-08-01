@@ -1,0 +1,112 @@
+/**index.wxss**/
+.container{
+  height:auto;
+  font-family:'Microsoft JhengHei';
+}
+
+.part1{
+  height:150px;
+  margin:5px;
+  display:flex;
+  flex-direction:column;
+  margin-top:10px; 
+}
+.question{
+  margin:2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  border:5px solid rgb(238, 243, 240);
+  height:25px;
+  line-height: 120%;
+}
+
+
+.part2{
+  height:auto;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  bottom:5px;
+}
+#t1{
+  font-size: 20px;
+  margin:5px;
+  font-weight:400 ;
+  font-style:initial;
+
+}
+
+#t2{
+  font-size:12px;
+  margin:10px;
+  font-weight:400 ;
+}
+
+.table{
+  border:10px solid rgb(238, 243, 240);
+  border-bottom: 0px;
+  width: 100%;
+
+}
+
+.foot{
+  border:10px solid rgb(238, 243, 240);
+  border-bottom: 0px;
+  width: 93%;
+
+}
+
+.ar{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tr{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.th,.td{
+  padding: 20px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  border-radius: 10px;
+
+  text-align: center;
+  width: 100%;
+  background-color: #DBEFEF;
+}
+
+
+.ah,.td{
+  padding: 25px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width: 100%;
+}
+
+.th{
+  font-weight: 800;
+  font-size: 28rpx;
+  color: #330e0e;
+}
+
+.ah{
+  font-weight: 800;
+  font-size: 28rpx;
+  color: #330e0e;
+}
+.td{
+  font-size: 20rpx;
+  color: #ec9480;
+}
+
+
+
+
+
+
