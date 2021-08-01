@@ -1,0 +1,14 @@
+<!--index.wxml-->
+
+<view class="container">
+  <view class="txt">请选择您的身份</view>
+  <view class="box">
+      <view class="b1">
+      <button class="tea" hover-class="b1-hover">我是老师</button>
+    </view>
+    <view class="or">or</view>
+    <view class="b2">
+      <button class="stu" hover-class="b2-hover">我是学生</button>
+    </view>
+  </view>
+</view>
