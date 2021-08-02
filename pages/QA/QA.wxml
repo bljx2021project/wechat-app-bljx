@@ -1,0 +1,76 @@
+
+  <view class="part1">
+    <scroll-view scroll-x="true" class="question"><navigator  url="../answer/answer" hover-class="none" ><text>问题1:这是个可能可以横着滚的问题,再长一点，再长一点</text></navigator></scroll-view>
+    <scroll-view scroll-x="true" class="question"><navigator  url="../answer/answer" hover-class="none" ><text>问题2</text></navigator></scroll-view>
+    <scroll-view scroll-x="true" class="question"><navigator  url="../answer/answer" hover-class="none" ><text>问题3</text></navigator></scroll-view>
+  </view>
+
+<text id="t1">  联系客服 </text>
+<text id="t2">点击框内文字可直接咨询客服哟</text>
+
+<view class="part2">
+  <view class="table">
+      <view class="tr">
+          <view class="th th0"bindtap="go">硬件</view>
+          <view class="th th1"bindtap="go">#</view>
+          <view class="th th1"bindtap="go">#</view>
+          <view class="th th1"bindtap="go">#</view>
+      </view>
+    </view>
+
+    <view class="table">
+      <view class="tr">
+          <view class="th th0" bindtap="go">软件</view>
+          <view class="th th1" bindtap="go">#</view>
+          <view class="th th1" bindtap="go">#</view>
+          <view class="th th1" bindtap="go">#</view>
+      </view>
+    </view>
+
+
+    <view class="table">
+      <view class="tr">
+          <view class="th th0" bindtap="go">系统</view>
+          <view class="th th1" bindtap="go">#</view>
+          <view class="th th1" bindtap="go">#</view>
+          <view class="th th1" bindtap="go">#</view>
+      </view>
+    </view>
+
+    <view class="table">
+      <view class="tr">
+          <view class="th th0" bindtap="go">贴膜</view>
+          <view class="th th1" bindtap="go">#</view>
+          <view class="th th1" bindtap="go">#</view>
+          <view class="th th1" bindtap="go">#</view>
+      </view>
+    </view>
+
+    <view class="table">
+      <view class="tr">
+          <view class="th th0" bindtap="go">配件</view>
+          <view class="th th1" bindtap="go">#</view>
+          <view class="th th1" bindtap="go">#</view>
+          <view class="th th1" bindtap="go">#</view>
+      </view>
+
+
+    </view>
+</view>
+   
+<view id="tt">
+    <text>\n</text>
+    <text decode> 产品攻略 </text>
+</view>
+
+<view class="foot">
+    <view class="ar">
+        <text>直播嘉年华</text>
+        <view class="ah ah1" bindtap="go">维修</view>
+        <text>投稿分奖金</text>
+        <view class="ah ah1" bindtap="go">维修</view>
+        <text>重金邀请</text>
+        <view class="ah ah1" bindtap="go">维修</view>
+    </view>
+</view>
+
