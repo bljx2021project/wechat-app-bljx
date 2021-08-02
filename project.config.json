@@ -12,11 +12,9 @@
     "preloadBackgroundData": false,
     "minified": true,
     "newFeature": false,
-    "coverView": true,
     "nodeModules": false,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
     "uglifyFileName": false,
     "checkInvalidKey": true,
     "checkSiteMap": true,
@@ -26,14 +24,13 @@
     "useMultiFrameRuntime": true,
     "useApiHook": true,
     "useApiHostProcess": true,
-    "showShadowRootInWxmlPanel": true,
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.19.0",
-  "appid": "wxd71740fc66dc1fcc",
+  "appid": "wx0291c750948c9248",
   "projectname": "wechat-app-bljx",
   "debugOptions": {
     "hidedInDevtools": []
