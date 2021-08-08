@@ -9,6 +9,18 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/QA/QA",
+        "text": "按钮1"
+      },
+      {
+        "pagePath": "pages/form/form",
+        "text": "按钮2"
+      }
+    ]
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

@@ -1,0 +1,87 @@
+/**index.wxss**/
+.container{
+  padding: 0;
+  height: 503px;
+  position: relative;
+  background-color:honeydew;
+}
+.txt{
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 700;
+}
+.box{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 120px;
+  height: 150px;
+  align-items: center;
+}
+.b1{
+  height: 150px;
+  line-height: 60px;
+  width: 45%;
+  float: left;
+}
+.b1-hover{
+  opacity: 0.8;
+  transform: scale(0.9,0.9);
+}
+.or{
+  font-size: 20px;
+}
+.b2{
+  height: 150px;
+  line-height: 60px;
+  width: 45%;
+  float: right;
+}
+.b2-hover{
+  opacity: 0.8;
+  transform: scale(0.9,0.9);
+}
+.tea:not([size='mini']){
+  width: 80%;
+  height: 100%;
+}
+.tea{
+  background-color: #66ccff;
+  border: none;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+  border-radius: 16px;
+  line-height: 40px;
+}
+.stu:not([size='mini']){
+  width: 80%;
+  height: 100%;
+}
+.stu{
+  background-color: #ee0000;
+  border: none;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+  border-radius: 16px;
+  line-height: 40px;
+}
