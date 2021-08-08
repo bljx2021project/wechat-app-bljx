@@ -5,7 +5,7 @@
 }
 
 .part1{
-  height:150px;
+  height:auto;
   margin:5px;
   display:flex;
   flex-direction:column;
@@ -14,11 +14,20 @@
 .question{
   margin:2px;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow:ellipsis;
-  border:5px solid rgb(238, 243, 240);
-  height:25px;
+  height:auto;
   line-height: 120%;
+  display: -webkit-box;
+}
+
+.hide {
+  /*规定子元素的排列方向 */
+  -webkit-box-orient: vertical;
+  /*限制文本显示的行数  */
+  -webkit-line-clamp: 2;
+  /*实现多余的文字隐藏并用省略号来代表被隐藏的文字  */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
@@ -50,7 +59,7 @@
 
 }
 
-.foot{
+/* .foot{
   border:10px solid rgb(238, 243, 240);
   border-bottom: 0px;
   width: 93%;
@@ -61,7 +70,7 @@
   width:100%;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .tr{
   width:100%;
