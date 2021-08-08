@@ -1,6 +1,5 @@
 {
   "pages":[
-    "pages/index/index",
     "pages/QA/QA",
     "pages/form/form"
   ],
