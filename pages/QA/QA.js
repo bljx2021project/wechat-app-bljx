@@ -4,7 +4,48 @@ Page({
    * 页面的初始数据
    */
   data: {
+    list:[{id:1}],
+    isA:true,
+    isB: true,
+    isC: true,
+    isD: true,
+  },
 
+  aa: function() {
+    this.setData({
+      isA: !this.data.isA,
+    })
+  },
+
+  bb: function() {
+    this.setData({
+      isB: !this.data.isB,
+    })
+  },
+  cc: function() {
+    this.setData({
+      isC: !this.data.isC,
+    })
+  },
+
+  dd: function() {
+    this.setData({
+      isD: !this.data.isD,
+    })
+  },
+  toShowItem(e) {
+    let that = this;
+    let id = e.currentTarget.dataset.id,
+      show = e.currentTarget.dataset.show;
+    that.data.list.forEach(function (v) {
+      if (v.id == id) {
+        v.show = !show;//这里污染原始数组数据
+      }
+    })
+    //利用污染，对列表设置值
+    this.setData({
+      list: this.data.list
+    })
   },
 go: function()
 {
