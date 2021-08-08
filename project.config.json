@@ -5,9 +5,8 @@
   },
   "setting": {
     "urlCheck": true,
-    "scopeDataCheck": false,
-    "coverView": true,
     "es6": false,
+    "enhance": true,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
@@ -26,10 +25,18 @@
     "useMultiFrameRuntime": true,
     "useApiHook": true,
     "useApiHostProcess": true,
-    "showShadowRootInWxmlPanel": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true
+    "minifyWXSS": true,
+    "showES6CompileOption": false
   },
   "compileType": "miniprogram",
   "libVersion": "2.19.0",
