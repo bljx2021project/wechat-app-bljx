@@ -9,6 +9,18 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/QA/QA",
+        "text": "常见问题"
+      },
+      {
+        "pagePath": "pages/form/form",
+        "text": "维修申请"
+      }
+    ]
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
