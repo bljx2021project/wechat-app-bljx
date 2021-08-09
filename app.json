@@ -13,11 +13,11 @@
     "list": [
       {
         "pagePath": "pages/QA/QA",
-        "text": "按钮1"
+        "text": "常见问题"
       },
       {
         "pagePath": "pages/form/form",
-        "text": "按钮2"
+        "text": "维修申请"
       }
     ]
   },
