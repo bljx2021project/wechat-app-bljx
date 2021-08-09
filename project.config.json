@@ -22,8 +22,13 @@
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "lazyloadPlaceholderEnable": false,
+<<<<<<< Updated upstream
     "useMultiFrameRuntime": false,
     "useApiHook": false,
+=======
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+>>>>>>> Stashed changes
     "useApiHostProcess": false,
     "babelSetting": {
       "ignore": [],
