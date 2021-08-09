@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/QA/QA",
+    "pages/choose/choose",
     "pages/form/form"
   ],
   "window":{
@@ -16,7 +17,7 @@
         "text": "常见问题"
       },
       {
-        "pagePath": "pages/form/form",
+        "pagePath": "pages/choose/choose",
         "text": "维修申请"
       }
     ]
