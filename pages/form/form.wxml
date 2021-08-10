@@ -1,27 +1,27 @@
 <view class="container">
   <form bindsubmit="addBuyerBasics">
+  <text>学院</text>
+  <input name="academy" placeholder="请输入学院"></input>
+  <view wx:if="{{true}}"><text>班级</text>
+  <input name="class" placeholder="请输入班级"></input>
+  <text>学号</text>
+  <input name="ID" placeholder="请输入学号"></input></view>
   <text>姓名</text>
-  <input name="buyerID" placeholder="请输入姓名"></input>
+  <input name="name" placeholder="请输入姓名"></input>
   <text>联系方式</text>
-  <input name="buyerPhone" placeholder="请输入手机号或微信"></input>
+  <input name="phone" placeholder="请输入手机号"></input>
+  <view wx:if="{{false}}"><text>电脑类型</text>
+  <input name="type" placeholder="请输入电脑类型"></input></view>
+  <text>电脑品牌</text>
+  <input name="brand" placeholder="请输入电脑品牌"></input>
   <text>电脑型号</text>
-  <input name="buyerName" placeholder="请输入电脑型号"></input>
-  <text>问题描述</text>
-  <input name="buyerWeixin" placeholder="请输入问题描述"></input>
-  <text>……</text>
-  <input name="buyerPassword" placeholder="请输入……"></input>
-  <text>……</text>
-  <input name="buyerPassword" placeholder="请输入……"></input>
-  <text>……</text>
-  <input name="buyerPassword" placeholder="请输入……"></input>
-  <text>……</text>
-  <input name="buyerPassword" placeholder="请输入……"></input>
-  <text>……</text>
-  <input name="buyerPassword" placeholder="请输入……"></input>
-  <text>……</text>
-  <input name="buyerPassword" placeholder="请输入……"></input>
-  <text>……</text>
-  <input name="buyerPassword" placeholder="请输入……"></input>
+  <input name="modelnumber" placeholder="请输入电脑型号"></input>
+  <text>故障描述</text>
+  <input name="description" placeholder="请输入文字描述"></input>
+  <text>请提交相关照片</text>
+  <button bindtap='chooseImageTap'>上传图片</button>
+  <text>\n</text>
+  <text>\n</text>
   <button type="primary" form-type="submit">提交</button>
   <button type="default" form-type="reset">清空</button>
   </form>
