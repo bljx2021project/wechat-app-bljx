@@ -1,76 +1,93 @@
 
-  <view class="part1">
-    <scroll-view scroll-x="true" class="question"><navigator  url="../answer/answer" hover-class="none" ><text>问题1:这是个可能可以横着滚的问题,再长一点，再长一点</text></navigator></scroll-view>
-    <scroll-view scroll-x="true" class="question"><navigator  url="../answer/answer" hover-class="none" ><text>问题2</text></navigator></scroll-view>
-    <scroll-view scroll-x="true" class="question"><navigator  url="../answer/answer" hover-class="none" ><text>问题3</text></navigator></scroll-view>
-  </view>
+  <view class="part1" wx:for="{{list}}" wx:key="{{index}}" wx:for-item="item">
 
-<text id="t1">  联系客服 </text>
-<text id="t2">点击框内文字可直接咨询客服哟</text>
+<view>
+<text class="question {{isA?'hide':''}}">我的桌面没有“此电脑”快捷方式，怎样添加？\n在桌面空白处右键-选择“个性化”-左侧点击“主题”-最下面或最右侧点击“桌面图标设置”选上对应的选项即可。</text>
+<text bindtap='aa'>{{isA ? '展开' : '收起'}}</text>
+</view>
+
+<view>
+<text class="question {{isB?'hide':''}}">我的电脑C盘快满了，该怎么办？\n1. 在资源管理器中右键C盘，选择属性，选择磁盘清理，选择左下角的清理系统文件，等待扫描完成后将不希望保留的文件选中后点击确定。\n2.校园网环境/挂北林VPN登录北林计协ftp://202.204.121.93（建议使用ftp工具如file zilla、winSCP等登录），在“资源整理”文件夹中找到“WizTree”软件下载并打开；左上角选择C盘并扫描，逐一检查非Windows系统文件的大文件，重点为User文件夹中的文件。删除掉不需要的文件即可。</text>
+<text bindtap='bb'>{{isB ? '展开' : '收起'}}</text>
+</view>
+
+<view>
+<text class="question {{isC?'hide':''}}">我的电脑连不上校园网了，该怎么办？\n1.	如果在连接bjfu-wifi时提示“无法连接到这个网络”，请重启设备或移动至其他位置连接。\n2.	如果在连接bjfu-wifi后未弹出登录认证页面、手动打开对应页面无反应，请右键任务栏右下角上网图标-打开“网络和Internet设置”-找到“网络和共享中心”-点击“bjfu-wifi”右侧的连接“WLAN”字样-点击“详细信息”-查看“ipv4地址”项中的ip是否为除169.xxx.xxx.xxx开头的ip；如果是以169开头，请尝试断开连接后重新连接；如非169开头，请右键开始菜单-选择“Windows PowerShell（管理员）”-输入“netsh winsock reset”并回车，重启电脑查看是否能连接校园网。</text>
+<text bindtap='cc'>{{isC ? '展开' : '收起'}}</text>
+</view>
+<view>
+<text class="question {{isD?'hide':''}}">我的电脑找不到蓝牙了/找不到喇叭/找不到其他外设了，该怎么办？\n在桌面右键此电脑-管理-设备管理器（如桌面没用此电脑图标请参照“我的桌面没有“此电脑”快捷方式，怎样添加？”问题解决），依次右键带有问号的设备-点击“更新驱动程序”，按照提示选择“自动搜索驱动程序”，安装完毕后重启电脑即可。</text>
+<text bindtap='dd'>{{isD ? '展开' : '收起'}}</text>
+</view>
+
+</view>
+
+<text id="t1"> 相关问题 </text>
+<text id="t2">点击框内文字跳转至回答</text>
 
 <view class="part2">
-  <view class="table">
-      <view class="tr">
-          <view class="th th0"bindtap="go">硬件</view>
-          <view class="th th1"bindtap="go">#</view>
-          <view class="th th1"bindtap="go">#</view>
-          <view class="th th1"bindtap="go">#</view>
-      </view>
-    </view>
-
-    <view class="table">
-      <view class="tr">
-          <view class="th th0" bindtap="go">软件</view>
-          <view class="th th1" bindtap="go">#</view>
-          <view class="th th1" bindtap="go">#</view>
-          <view class="th th1" bindtap="go">#</view>
-      </view>
-    </view>
-
-
-    <view class="table">
-      <view class="tr">
-          <view class="th th0" bindtap="go">系统</view>
-          <view class="th th1" bindtap="go">#</view>
-          <view class="th th1" bindtap="go">#</view>
-          <view class="th th1" bindtap="go">#</view>
-      </view>
-    </view>
-
-    <view class="table">
-      <view class="tr">
-          <view class="th th0" bindtap="go">贴膜</view>
-          <view class="th th1" bindtap="go">#</view>
-          <view class="th th1" bindtap="go">#</view>
-          <view class="th th1" bindtap="go">#</view>
-      </view>
-    </view>
-
-    <view class="table">
-      <view class="tr">
-          <view class="th th0" bindtap="go">配件</view>
-          <view class="th th1" bindtap="go">#</view>
-          <view class="th th1" bindtap="go">#</view>
-          <view class="th th1" bindtap="go">#</view>
-      </view>
-
-
-    </view>
-</view>
-   
-<view id="tt">
-    <text>\n</text>
-    <text decode> 产品攻略 </text>
+<view class="table">
+  <view class="tr">
+      <view class="th th0"bindtap="go">硬件</view>
+      <view class="th th1"bindtap="go">#</view>
+      <view class="th th1"bindtap="go">#</view>
+      <view class="th th1"bindtap="go">#</view>
+  </view>
 </view>
 
-<view class="foot">
-    <view class="ar">
-        <text>直播嘉年华</text>
-        <view class="ah ah1" bindtap="go">维修</view>
-        <text>投稿分奖金</text>
-        <view class="ah ah1" bindtap="go">维修</view>
-        <text>重金邀请</text>
-        <view class="ah ah1" bindtap="go">维修</view>
-    </view>
+<view class="table">
+  <view class="tr">
+      <view class="th th0" bindtap="go">软件</view>
+      <view class="th th1" bindtap="go">#</view>
+      <view class="th th1" bindtap="go">#</view>
+      <view class="th th1" bindtap="go">#</view>
+  </view>
 </view>
 
+
+<view class="table">
+  <view class="tr">
+      <view class="th th0" bindtap="go">系统</view>
+      <view class="th th1" bindtap="go">#</view>
+      <view class="th th1" bindtap="go">#</view>
+      <view class="th th1" bindtap="go">#</view>
+  </view>
+</view>
+
+<!-- <view class="table">
+  <view class="tr">
+      <view class="th th0" bindtap="go">贴膜</view>
+      <view class="th th1" bindtap="go">#</view>
+      <view class="th th1" bindtap="go">#</view>
+      <view class="th th1" bindtap="go">#</view>
+  </view>
+</view> -->
+
+<view class="table">
+  <view class="tr">
+      <view class="th th0" bindtap="go">配件</view>
+      <view class="th th1" bindtap="go">#</view>
+      <view class="th th1" bindtap="go">#</view>
+      <view class="th th1" bindtap="go">#</view>
+  </view>
+
+
+</view>
+</view>
+
+<!-- <view id="tt">
+<text>\n</text>
+<text decode> 产品攻略 </text>
+</view> -->
+
+<!-- <view class="foot">
+<view class="ar">
+    <text>直播嘉年华</text>
+    <view class="ah ah1" bindtap="go">维修</view>
+    <text>投稿分奖金</text>
+    <view class="ah ah1" bindtap="go">维修</view>
+    <text>重金邀请</text>
+    <view class="ah ah1" bindtap="go">维修</view>
+</view>
+</view>
+-->

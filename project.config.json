@@ -22,9 +22,9 @@
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "lazyloadPlaceholderEnable": false,
+
     "useMultiFrameRuntime": true,
     "useApiHook": true,
-    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -40,7 +40,6 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.19.0",
-  "appid": "wxd71740fc66dc1fcc",
   "projectname": "wechat-app-bljx",
   "debugOptions": {
     "hidedInDevtools": []

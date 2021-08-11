@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/QA/QA",
+    "pages/choose/choose",
     "pages/form/form"
   ],
   "window":{
