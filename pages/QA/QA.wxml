@@ -22,8 +22,8 @@
 
 </view>
 
-<text id="t1">  联系客服 </text>
-<text id="t2">点击框内文字可直接咨询客服哟</text>
+<text id="t1"> 相关问题 </text>
+<text id="t2">点击框内文字跳转至回答</text>
 
 <view class="part2">
 <view class="table">
@@ -54,14 +54,14 @@
   </view>
 </view>
 
-<view class="table">
+<!-- <view class="table">
   <view class="tr">
       <view class="th th0" bindtap="go">贴膜</view>
       <view class="th th1" bindtap="go">#</view>
       <view class="th th1" bindtap="go">#</view>
       <view class="th th1" bindtap="go">#</view>
   </view>
-</view>
+</view> -->
 
 <view class="table">
   <view class="tr">
@@ -75,10 +75,10 @@
 </view>
 </view>
 
-<view id="tt">
+<!-- <view id="tt">
 <text>\n</text>
 <text decode> 产品攻略 </text>
-</view>
+</view> -->
 
 <!-- <view class="foot">
 <view class="ar">
