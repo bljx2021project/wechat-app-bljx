@@ -14,11 +14,15 @@
     "list": [
       {
         "pagePath": "pages/QA/QA",
-        "text": "常见问题"
+        "text": "常见问题",
+        "iconPath": "pages/images/1.1.png",
+        "selectedIconPath": "pages/images/1.2.png"
       },
       {
-        "pagePath": "pages/choose/choose",
-        "text": "维修申请"
+        "pagePath": "pages/form/form",
+        "text": "维修申请",
+        "iconPath": "pages/images/2.1.png",
+        "selectedIconPath": "pages/images/2.2.png"
       }
     ]
   },
