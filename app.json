@@ -19,7 +19,7 @@
         "selectedIconPath": "pages/images/1.2.png"
       },
       {
-        "pagePath": "pages/form/form",
+        "pagePath": "pages/choose/choose",
         "text": "维修申请",
         "iconPath": "pages/images/2.1.png",
         "selectedIconPath": "pages/images/2.2.png"
