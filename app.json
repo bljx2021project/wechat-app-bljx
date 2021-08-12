@@ -1,4 +1,7 @@
 {
+  "usingComponents": {
+    "van-steps": "@vant/weapp/steps/index"
+  },  
   "pages":[
     "pages/QA/QA",
     "pages/choose/choose",
@@ -26,6 +29,5 @@
       }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

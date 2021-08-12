@@ -1,17 +1,53 @@
-// index.js
 // 获取应用实例
 const app = getApp()
 
+const inf = {
+  身份: ['老师', '学生'],
+  学院: ['保护区学院', '材料学院', '草原学院', '工学院', '环境学院',
+        '经管学院', '理学院', '林学院', '马克思主义学院', '人文学院',
+        '生物学院', '水保学院', '外语学院', '信息学院', '艺术学院','园林学院']
+};
+
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    steps: [
+      {
+        text: '选择身份',
+        desc: '',
+      },
+      {
+        text: '填写信息',
+        desc: '',
+      },
+      {
+        text: '申请成功',
+        desc: '',
+      },
+    ],
+    activeNames: ['1'],
+
+    columns: [
+      {
+        values: inf['身份'],
+        className: 'column1',
+      },
+      {
+        values: inf['学院'],
+        className: 'column2',
+      },
+    ],
+    curSelect:[]
   },
   // 事件处理函数
+  onChange_collapse(event) {
+    this.setData({
+      activeNames: event.detail,
+    });
+  },
+  onChange_picker(event) {
+    const { picker, value, index } = event.detail;
+    this.data.curSelect = value;
+  },
   goFrom() {
     wx.navigateTo({
       url: '../form/form'
@@ -24,25 +60,4 @@ Page({
       })
     }
   },
-  getUserProfile(e) {
-    // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
-    wx.getUserProfile({
-      desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      success: (res) => {
-        console.log(res)
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    })
-  },
-  getUserInfo(e) {
-    // 不推荐使用getUserInfo获取用户信息，预计自2021年4月13日起，getUserInfo将不再弹出弹窗，并直接返回匿名的用户个人信息
-    console.log(e)
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  }
 })
