@@ -24,7 +24,7 @@ Page({
         desc: '',
       },
     ],
-    activeNames: ['1'],
+    active: ['1'],
 
     columns: [
       {

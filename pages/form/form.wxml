@@ -1,4 +1,4 @@
-<view class="container">
+<!-- <view class="container">
   <form bindsubmit="addBuyerBasics">
   <text>学院</text>
   <input name="academy" placeholder="请输入学院"></input>
@@ -25,4 +25,6 @@
   <button type="primary" form-type="submit">提交</button>
   <button type="default" form-type="reset">清空</button>
   </form>
-</view>
+</view> -->
+<van-steps steps="{{ steps }}" active="{{ active }}" />
+<van-divider contentPosition="left" fontSize="16" textColor="#1989fa">基本信息</van-divider>

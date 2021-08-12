@@ -1,12 +1,1 @@
-form{
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
-  width: 80%;
-  margin:20rpx;
-}
-
-input{
-  border: 1px solid #000;
-}
 
