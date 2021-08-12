@@ -1,0 +1,22 @@
+{
+  "name": "wechat-app-bljx",
+  "version": "1.0.0",
+  "description": "维修申请的小程序",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2001renhaoyu/wechat-app-bljx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2001renhaoyu/wechat-app-bljx/issues"
+  },
+  "homepage": "https://github.com/2001renhaoyu/wechat-app-bljx#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.8.0"
+  }
+}
