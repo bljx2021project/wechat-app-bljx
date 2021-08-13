@@ -28,3 +28,4 @@
 </view> -->
 <van-steps steps="{{ steps }}" active="{{ active }}" />
 <van-divider contentPosition="left" fontSize="16" textColor="#1989fa">基本信息</van-divider>
+<van-button type="primary" size="normal" style=" flex: 2;" bind:click ="goFrom">提交申请</van-button>
