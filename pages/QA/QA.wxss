@@ -1,121 +1,25 @@
-/**index.wxss**/
-.container{
-  height:auto;
-  font-family:'Microsoft JhengHei';
+.part0{
+  margin:30rpx;
+  margin-left:50rpx;
+  font-size:40rpx;
+  font-weight:400;
+  float:left;
 }
 
 .part1{
   height:auto;
-  margin:5px;
-  display:flex;
-  flex-direction:column;
-  margin-top:10px; 
+  margin:5rpx;
+  width:auto;
+  clear:both;
+  margin-bottom: 100rpx;
 }
-.question{
-  margin:2px;
-  overflow: hidden;
-  text-overflow:ellipsis;
-  height:auto;
-  line-height: 120%;
-  display: -webkit-box;
-}
-
-.hide {
-  /*规定子元素的排列方向 */
-  -webkit-box-orient: vertical;
-  /*限制文本显示的行数  */
-  -webkit-line-clamp: 2;
-  /*实现多余的文字隐藏并用省略号来代表被隐藏的文字  */
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 
 .part2{
-  height:auto;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-around;
-  bottom:5px;
-}
-#t1{
-  font-size: 20px;
-  margin:5px;
-  font-weight:400 ;
-  font-style:initial;
-
+ height:auto;
+ margin:50rpx;
+ clear:both;
 }
 
-#t2{
-  font-size:12px;
-  margin:10px;
-  font-weight:400 ;
+.tab-content{
+  margin:30rpx;
 }
-
-.table{
-  border:10px solid rgb(238, 243, 240);
-  border-bottom: 0px;
-  width: 100%;
-
-}
-
-/* .foot{
-  border:10px solid rgb(238, 243, 240);
-  border-bottom: 0px;
-  width: 93%;
-
-}
-
-.ar{
-  width:100%;
-  display: flex;
-  flex-direction: column;
-} */
-
-.tr{
-  width:100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.th,.td{
-  padding: 20px;
-  border-bottom: 1px solid #dadada;
-  border-right: 1px solid #dadada;
-  border-radius: 10px;
-
-  text-align: center;
-  width: 100%;
-  background-color: #DBEFEF;
-}
-
-
-.ah,.td{
-  padding: 25px;
-  border-bottom: 1px solid #dadada;
-  border-right: 1px solid #dadada;
-  text-align: center;
-  width: 100%;
-}
-
-.th{
-  font-weight: 800;
-  font-size: 28rpx;
-  color: #330e0e;
-}
-
-.ah{
-  font-weight: 800;
-  font-size: 28rpx;
-  color: #330e0e;
-}
-.td{
-  font-size: 20rpx;
-  color: #ec9480;
-}
-
-
-
-
-
-

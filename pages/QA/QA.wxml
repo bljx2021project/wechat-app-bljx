@@ -1,93 +1,91 @@
+<view class="part0">常见问题</view>
+<view class="part1">
+  <van-collapse accordion value="{{ activeName }}" bind:change="onChange" >
+  <van-collapse-item title="我的电脑C盘快满了，该怎么办？" name="1">
+    <text> 1. 在资源管理器中右键C盘，选择属性，选择磁盘清理，选择左下角的清理系统文件，等待扫描完成后将不希望保留的文件选中后点击确定。\n2.校园网环境/挂北林VPN登录北林计协ftp://202.204.121.93（建议使用ftp工具如file zilla、winSCP等登录），在“资源整理”文件夹中找到“WizTree”软件下载并打开；左上角选择C盘并扫描，逐一检查非Windows系统文件的大文件，重点为User文件夹中的文件。删除掉不需要的文件即可。</text>
+  </van-collapse-item>
 
-  <view class="part1" wx:for="{{list}}" wx:key="{{index}}" wx:for-item="item">
-
-<view>
-<text class="question {{isA?'hide':''}}">我的桌面没有“此电脑”快捷方式，怎样添加？\n在桌面空白处右键-选择“个性化”-左侧点击“主题”-最下面或最右侧点击“桌面图标设置”选上对应的选项即可。</text>
-<text bindtap='aa'>{{isA ? '展开' : '收起'}}</text>
+  <van-collapse-item title="笔记本玩游戏掉帧卡顿怎么办？" name="2">
+  <text>定期拆机清灰，防止电脑中灰尘沉积影响散热。\n1.尽量不要在床上玩儿电脑，不要让棉布制品堵住散热口。\n2.夏天尽量在空调房中玩电脑，也可配置散热设备。\n3.运行大型游戏时间不要过长（一般控制在3个小时内），毕竟电脑和人一样都需要休息的。</text>
+  </van-collapse-item>
+  <van-collapse-item title="我的电脑连不上校园网了，该怎么办？" name="3">
+  <text>校园网相当的不稳定，通过以下步骤逐个排查：\n1.	如果在连接bjfu-wifi时提示“无法连接到这个网络”，请重启设备或移动至其他位置连接。\n2.	如果在连接bjfu-wifi后未弹出登录认证页面、手动打开对应页面无反应，请右键任务栏右下角上网图标-打开“网络和Internet设置”-找到“网络和共享中心”-点击“bjfu-wifi”右侧的连接“WLAN”字样-点击“详细信息”-查看“ipv4地址”项中的ip是否为除169.xxx.xxx.xxx开头的ip；如果是以169开头，请尝试断开连接后重新连接；如非169开头，请右键开始菜单-选择“Windows PowerShell（管理员）”-输入“netsh winsock reset”并回车，重启电脑查看是否能连接校园网。
+</text>
+  </van-collapse-item>
+  <van-collapse-item title="电脑内存占用过高" name="4">
+  <text>1. 关闭服务启动项\n运行msconfig——服务——隐藏Microsoft服务——全部禁用——重启，隐藏的服务我们启动服务的时候就会启动了，要不一直占着内存不工作。\n2. 卸载360安全卫士等，换用电脑清理软件：CClerner或Dism++，以及电脑杀毒软件： 火绒。
+</text>
+  </van-collapse-item>
+</van-collapse>
 </view>
-
-<view>
-<text class="question {{isB?'hide':''}}">我的电脑C盘快满了，该怎么办？\n1. 在资源管理器中右键C盘，选择属性，选择磁盘清理，选择左下角的清理系统文件，等待扫描完成后将不希望保留的文件选中后点击确定。\n2.校园网环境/挂北林VPN登录北林计协ftp://202.204.121.93（建议使用ftp工具如file zilla、winSCP等登录），在“资源整理”文件夹中找到“WizTree”软件下载并打开；左上角选择C盘并扫描，逐一检查非Windows系统文件的大文件，重点为User文件夹中的文件。删除掉不需要的文件即可。</text>
-<text bindtap='bb'>{{isB ? '展开' : '收起'}}</text>
-</view>
-
-<view>
-<text class="question {{isC?'hide':''}}">我的电脑连不上校园网了，该怎么办？\n1.	如果在连接bjfu-wifi时提示“无法连接到这个网络”，请重启设备或移动至其他位置连接。\n2.	如果在连接bjfu-wifi后未弹出登录认证页面、手动打开对应页面无反应，请右键任务栏右下角上网图标-打开“网络和Internet设置”-找到“网络和共享中心”-点击“bjfu-wifi”右侧的连接“WLAN”字样-点击“详细信息”-查看“ipv4地址”项中的ip是否为除169.xxx.xxx.xxx开头的ip；如果是以169开头，请尝试断开连接后重新连接；如非169开头，请右键开始菜单-选择“Windows PowerShell（管理员）”-输入“netsh winsock reset”并回车，重启电脑查看是否能连接校园网。</text>
-<text bindtap='cc'>{{isC ? '展开' : '收起'}}</text>
-</view>
-<view>
-<text class="question {{isD?'hide':''}}">我的电脑找不到蓝牙了/找不到喇叭/找不到其他外设了，该怎么办？\n在桌面右键此电脑-管理-设备管理器（如桌面没用此电脑图标请参照“我的桌面没有“此电脑”快捷方式，怎样添加？”问题解决），依次右键带有问号的设备-点击“更新驱动程序”，按照提示选择“自动搜索驱动程序”，安装完毕后重启电脑即可。</text>
-<text bindtap='dd'>{{isD ? '展开' : '收起'}}</text>
-</view>
-
-</view>
-
-<text id="t1"> 相关问题 </text>
-<text id="t2">点击框内文字跳转至回答</text>
-
+<view class="part0">问题导航</view>
 <view class="part2">
-<view class="table">
-  <view class="tr">
-      <view class="th th0"bindtap="go">硬件</view>
-      <view class="th th1"bindtap="go">#</view>
-      <view class="th th1"bindtap="go">#</view>
-      <view class="th th1"bindtap="go">#</view>
-  </view>
+  <van-tabs swipeable>
+    <van-tab title="分类1"class="tab-content">
+<van-collapse value="{{ activeNames }}" bind:change="onChange2">
+  <van-collapse-item title="电脑经常蓝屏，该怎么解决？" name="1">
+    <text> 1）重启计算机。如果蓝屏只是偶尔的出现蓝屏的话，我们只要重启计算机就可以了；\n
+2）内存条接触不良或内存损坏导致电脑蓝屏\n
+在实际的工作中笔者遇见最多的电脑蓝屏现象就是内存条接触不良(主要是由于电脑内部灰尘太多导致，老电脑常发生)以及硬盘故障导致的电脑蓝屏居多。当然遇到电脑内存条出现故障也会出现电脑蓝屏现象。\n
+解决办法:\n
+由于多数是由内存引起的蓝屏故障都是由于内部灰尘过多或者接触不良导致，所以解决办法也非常的简单，只需要打开电脑机箱，将内存条拔出，清理下插槽以及搽干净内存条金手指后再装回去，一般问题都可以解决。如果问题没有解决，确定是内存故障，更换内存条即可解决问题。\n
+3）硬盘出现故障导致电脑蓝屏\n
+硬盘出现问题也经常会导致电脑蓝屏，比如硬盘出现坏道，电脑读取数据错误导致了蓝屏现象，因为硬盘和内存一样，承载一些数据的存取操作，如果存取/读取系统文件所在的区域出现坏道，也会造成系统无法正常运行，导致系统崩溃，导致电脑蓝屏。\n
+解决办法:\n
+检测硬盘坏道情况，如果硬盘出现大量坏道，建议备份数据更换硬盘。如果出现坏到比较少，建议备份数据，重新格式化分区磁盘，懂电脑硬盘的朋友还可以将坏到硬盘区进行隔离操作。之后再重新安装系统即可解决问题。\n
+4）方案四:安装的软件存在不兼导致电脑蓝屏\n
+如果电脑开始使用的好好的，某天安装了某某软件后不久频繁出现电脑蓝屏故障，这种问题多数出现软件不兼容的情况，不过这种电脑软件不兼容的情况一般也很少发生。\n
+解决办法:\n
+如果确定开始之前电脑用的好好的，安装某软件后经常出现电脑蓝屏故障，那么可以采用卸载掉后来安装的软件试试，若问题解决一般是软件不兼容导致的电脑蓝屏，若问题没有解决则可能是其他原因导致的电脑蓝屏。\n
+5）方案五:电脑中病毒导致的电脑蓝屏故障\n
+“电脑蓝屏怎么解决”这一问题可能还涉及到计算机病毒，如今病毒木马种类越来越多，传播途径多种多样，防不胜防，有些病毒木马感染系统文件，造成系统文件错误，或导致系统资源耗尽，也可能造成蓝屏现象的发生，所以如果大家发现电脑蓝屏请仔细想想是不是去过一些不良软件和下载了一些垃圾网站上的程序运行。\n
+解决办法:\n
+发现电脑出现蓝屏现象，下次重新启动电脑后可进行杀毒操作，建议选用目前主流的杀毒软件查杀，如果遇到恶意病毒，建议系统还原或者重新安装系统。\n
+</text>
+  </van-collapse-item>
+  <van-collapse-item title="死机、系统自动重启" name="2">
+    <text>在使用笔记本时往往会遇到死机或者系统自动重启等问题，这一般是系统文件异常，或中病毒；机型不支持某操作系统、应用程序冲突导致死机。当然也有可能是使用环境的温度、湿度等干扰因素，这时可以给笔记本清灰、使用散热底座或者在空调房内使用笔记本电脑均可。也有可能是设置了定时关机噢。</text>
+  </van-collapse-item>
+</van-collapse>
+    </van-tab>
+
+    <van-tab title="分类2" class="tab-content">
+<van-collapse value="{{ activeNames2 }}" bind:change="onChange3">
+  <van-collapse-item title="触控板故障" name="1">
+    <text> 触控板无法正常使用，可能是因为快捷键关闭或触控板驱动设置有误、主板或触控板硬件存在故障、接口接触不良问题或其他软件或设置问题。触控板使用过程中鼠标箭头不灵活，可能是机型问题、使用者个体差异或触控板驱动等软件问题。遇到上面的情况，首先要检查是否有外置鼠标接入并用MOUSE测试程序检测是否正常；有能力拆机的朋友可以检查触控板连线是否连接正确。</text>
+  </van-collapse-item>
+  <van-collapse-item title="电脑键盘失灵怎么办？" name="2">
+    <text>1）	若是按下键盘的字母部分打出数字，可能是误触了可能存在的组合键，打开了电脑的小键盘，一般同时按住 fn+Numlk 键切换即可或重启电脑即可。\n
+2）若键盘无反应，可尝试用以下方法排查：修改键盘的驱动：通过“我的电脑”打开系统属性，选择硬件标签：打开设备管理器，我们发现中文Windows XP操作系统下，默认的键盘驱动是“标准101/102键或Microsoft自然PS/2键盘”。\n
+　　1. 右键点击选择更新驱动程序，会出现硬件更新向导：选择“从列表或指定位置安装(高级)”，单击“下一步”，选择“不要搜索。我要自己选择要安装的驱动程序。”\n
+　　单击“下一步”，进入“选择要为此硬件安装的设备驱动程序”页去掉复选框“显示兼容硬件”前的小勾。在“标准键盘型号”栏中选择“Japanese PS/2 Keyboard (106/109 Key)”，单击“下一步”，弹出“更新驱动程序警告”，点“是”。“确认设备安装”窗口继续点“是”。\n
+　　2. 完成硬件更新向导,重新启动计算机。\n
+修改 注册表 ：单击“开始”菜单，点“运行”，输入“regedit”，打开注册表，进入“HKEY_LOCAL_MACHINE SYSTEMControlSet001ControlKeyboard Layouts”，里面有很多子项，通过观察我发现，以“0804”结尾的都是简体中文输入法。打开“E00E0804”，可以看到右侧子项里有“Layout File”子项，双击打开该项，将“数值数据”中的“kbdus.dll”改为“kbdjpn.dll”，“确定”即可。依此类推，可以将所有的以“0804”结尾的子项中“Layout File”全部改为“kbdjpn.dll”，具体就根据自己常用的输入法进行选择了。然后重新启动计算机。\n
+3）	若以上方法无法解决，建议联系售后人员进行维修。\n
+</text>
+  </van-collapse-item>
+</van-collapse>
+    </van-tab>
+
+    <van-tab title="分类3" class="tab-content">
+<van-collapse value="{{ activeNames3 }}" bind:change="onChange4">
+  <van-collapse-item title="开机速度慢怎么办？" name="1">
+    <text> 1．禁用闲置的IDE通道\n
+右键点击“我的电脑－属性”，然后点击“硬件”接着点击“设备管理器”，在其中打开“IDE ATA/PATA控制器”然后分别进入主要和次要IDE通道，选择“高级设置”，在这里找到“当前传送模式”为“不适用”的一项，将此项的“设备类型”设置为“无”。\n
+2．减少不必要的开机启动程序\n
+3．自动释放系统资源：我们可以通过修改注册表键值的方法，使关闭软件后自动清除内存中没用的DLL文件及时收回消耗的系统资源。运行“Regedit”打开注册表编辑器，找到“HKEY_LOCAL_MACHINE→SOFTWARE→Microsoft→Windows→CurrentVersion→explorer”主键，在右边窗口单击右键，新建一个名为“AlwaysUnloadDll”的“字符串值”，然后将 “AlwaysUnloadDll”的键值修改为“1”，退出注册表重新启动机器即可达到目的。
+</text>
+  </van-collapse-item>
+  <van-collapse-item title="电脑很卡怎么办？" name="2">
+    <text>1．定期清理系统垃圾；整理桌面文件，部分可放到非C盘上\n
+2．打开我的电脑，右键点击本地磁盘C的属性，找到磁盘清理，然后把不必要的勾选上，确定清理即可。\n
+3．可定期清理灰尘。\n
+</text>
+  </van-collapse-item>
+</van-collapse>
+    </van-tab>
+  </van-tabs>
 </view>
 
-<view class="table">
-  <view class="tr">
-      <view class="th th0" bindtap="go">软件</view>
-      <view class="th th1" bindtap="go">#</view>
-      <view class="th th1" bindtap="go">#</view>
-      <view class="th th1" bindtap="go">#</view>
-  </view>
-</view>
 
 
-<view class="table">
-  <view class="tr">
-      <view class="th th0" bindtap="go">系统</view>
-      <view class="th th1" bindtap="go">#</view>
-      <view class="th th1" bindtap="go">#</view>
-      <view class="th th1" bindtap="go">#</view>
-  </view>
-</view>
-
-<!-- <view class="table">
-  <view class="tr">
-      <view class="th th0" bindtap="go">贴膜</view>
-      <view class="th th1" bindtap="go">#</view>
-      <view class="th th1" bindtap="go">#</view>
-      <view class="th th1" bindtap="go">#</view>
-  </view>
-</view> -->
-
-<view class="table">
-  <view class="tr">
-      <view class="th th0" bindtap="go">配件</view>
-      <view class="th th1" bindtap="go">#</view>
-      <view class="th th1" bindtap="go">#</view>
-      <view class="th th1" bindtap="go">#</view>
-  </view>
-
-
-</view>
-</view>
-
-<!-- <view id="tt">
-<text>\n</text>
-<text decode> 产品攻略 </text>
-</view> -->
-
-<!-- <view class="foot">
-<view class="ar">
-    <text>直播嘉年华</text>
-    <view class="ah ah1" bindtap="go">维修</view>
-    <text>投稿分奖金</text>
-    <view class="ah ah1" bindtap="go">维修</view>
-    <text>重金邀请</text>
-    <view class="ah ah1" bindtap="go">维修</view>
-</view>
-</view>
--->
