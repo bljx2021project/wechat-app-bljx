@@ -1,0 +1,2 @@
+<van-steps steps="{{ steps }}" active="{{ active }}" />
+<van-divider contentPosition="left" fontSize="16" textColor="#1989fa">基本信息</van-divider>

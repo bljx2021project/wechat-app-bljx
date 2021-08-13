@@ -1,11 +1,13 @@
 {
   "usingComponents": {
     "van-steps": "@vant/weapp/steps/index"
+    
   },  
   "pages":[
-    "pages/form/form",
     "pages/QA/QA",
-    "pages/choose/choose"
+    "pages/form/form",
+    "pages/choose/choose",
+    "pages/success/success"
   ],
   "window":{
     "backgroundTextStyle":"light",
