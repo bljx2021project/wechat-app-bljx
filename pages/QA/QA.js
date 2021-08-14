@@ -4,108 +4,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[{id:1}],
-    isA:true,
-    isB: true,
-    isC: true,
-    isD: true,
+    activeName: '1',
+    activeNames: ['1'],
+    activeNames2: ['1'],
+    activeNames3: ['1'],
   },
-
-  aa: function() {
+  onChange(event) {
     this.setData({
-      isA: !this.data.isA,
-    })
+      activeName: event.detail,
+    });
   },
-
-  bb: function() {
+  onChange2(event) {
     this.setData({
-      isB: !this.data.isB,
-    })
+      activeNames: event.detail,
+    });
   },
-  cc: function() {
+  onChange3(event) {
     this.setData({
-      isC: !this.data.isC,
-    })
+      activeNames2: event.detail,
+    });
   },
-
-  dd: function() {
+  onChange4(event) {
     this.setData({
-      isD: !this.data.isD,
-    })
-  },
-  toShowItem(e) {
-    let that = this;
-    let id = e.currentTarget.dataset.id,
-      show = e.currentTarget.dataset.show;
-    that.data.list.forEach(function (v) {
-      if (v.id == id) {
-        v.show = !show;//这里污染原始数组数据
-      }
-    })
-    //利用污染，对列表设置值
-    this.setData({
-      list: this.data.list
-    })
-  },
-go: function()
-{
-  wx.navigateTo({
-    url: "../index/index"
-  })
-},
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+      activeNames3: event.detail,
+    });
   }
+
 })
