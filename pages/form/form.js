@@ -53,5 +53,9 @@ Page({
   onLoad: function (options) {
     
   },
- 
+  goFrom() {
+    wx.navigateTo({
+      url: '../success/success'
+    })
+  },
 })

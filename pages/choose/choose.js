@@ -24,7 +24,7 @@ Page({
         desc: '',
       },
     ],
-    active: ['1'],
+    active: ['0'],
 
     columns: [
       {
@@ -44,6 +44,7 @@ Page({
       activeNames: event.detail,
     });
   },
+  
   onChange_picker(event) {
     const { picker, value, index } = event.detail;
     this.data.curSelect = value;
