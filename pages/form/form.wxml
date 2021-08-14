@@ -28,4 +28,70 @@
 </view> -->
 <van-steps steps="{{ steps }}" active="{{ active }}" />
 <van-divider contentPosition="left" fontSize="16" textColor="#1989fa">基本信息</van-divider>
-<van-button type="primary" size="normal" style=" flex: 2;" bind:click ="goFrom">提交申请</van-button>
+<van-cell-group>
+  <van-field
+    value="{{ name }}"
+    placeholder="请输入姓名"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+    value="{{ id }}"
+    placeholder="请输入学号"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+    value="{{ class }}"
+    placeholder="请输入班级"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+    value="{{ phone }}"
+    placeholder="请输入手机号"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+<van-divider contentPosition="left" fontSize="16" textColor="#1989fa">维修信息</van-divider>
+<van-radio-group value="{{ radio }}" bind:change="onChange">
+  <van-radio name="1">笔记本电脑</van-radio>
+  <van-radio name="2">台式机</van-radio>
+</van-radio-group>
+<van-cell-group>
+  <van-field
+    value="{{ brand }}"
+    placeholder="请输入电脑品牌"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+    value="{{ modelnumber }}"
+    placeholder="请输入电脑型号"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+    value="{{ description }}"
+    placeholder="请输入故障描述"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+<text>上传故障照片</text>
+<text>\n</text>
+<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+<text>\n</text>
+<button type="primary" form-type="submit">提交</button>
+  <button type="default" form-type="reset">清空</button>
