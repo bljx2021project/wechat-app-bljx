@@ -1,13 +1,13 @@
 <van-steps steps="{{ steps }}" active="{{ active }}" />
 <view style="text-align:center;margin:30px">
   <van-icon name="passed" color="#32CD32" size="160px" />
-  <text style="color:#ee0000;font-size:17px">\n\n您的申请已提交成功！</text>
-  <text style="font-size:14px">\n\n如有现场维修需求\n请于下次维修活动携带电脑及充电器前来</text>
-  <text style="font-size:14px">\n\n下次维修活动时间地点：\n\n\n</text>
+  <text style="font-weight: bold; font-size: 17px; color: black">\n\n您的申请已提交成功！</text>
   <van-image
   width="250px"
   height="250px"
   fit="contain"
   src="/pages/images/logo.png"
 />
+<text style="font-weight: bold;font-size: 17px; color: black">\n感谢您对计协的信任！</text>
+
 </view>

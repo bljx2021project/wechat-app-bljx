@@ -24,7 +24,6 @@ Page({
     ],
     active: ['1'],
   },
-
   onChange(event) {
     this.setData({
       radio: event.detail,
