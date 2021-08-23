@@ -18,7 +18,7 @@
 ### 后期：利用vant组件库，优化界面设计，统一风格 
 <img src="example\logo.png" width="50%">
 
-    1、vant是一款轻量、可靠的移动端 Vue 组件库，是
+    1、vant是一款轻量、可靠的移动端 Vue 组件库
     2、有着简约的风格，是业界主流的移动端组件库之一
 ## 完成效果
 <img src="example\1.png" width="50%">
