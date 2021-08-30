@@ -1,9 +1,18 @@
 .part0{
   margin:30rpx;
-  margin-left:50rpx;
+  margin-left:38rpx;
+  margin-top:32rpx;
   font-size:40rpx;
   font-weight:400;
   float:left;
+}
+.icon0{
+  width:40rpx;
+  height:40rpx;
+  float:left;
+  transform: scale(1.8);
+  margin-left: 40rpx;
+  margin-top: 40rpx;
 }
 
 .part1{
