@@ -4,10 +4,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    activeName: '1',
-    activeNames: ['1'],
-    activeNames2: ['1'],
-    activeNames3: ['1'],
+    activeName: '0',
+    activeNames: ['0'],
+    activeNames2: ['0'],
+    activeNames3: ['0'],
   },
   onChange(event) {
     this.setData({
