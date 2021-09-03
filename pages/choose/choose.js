@@ -36,7 +36,8 @@ Page({
         className: 'column2',
       },
     ],
-    curSelect:[]
+    curSelect:[],
+    activeNames:'1'
   },
   // 事件处理函数
   onChange_collapse(event) {

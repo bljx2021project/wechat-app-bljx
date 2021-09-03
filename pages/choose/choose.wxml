@@ -2,15 +2,20 @@
 
   <van-divider contentPosition="left" fontSize="16" textColor="#1989fa">有关事项</van-divider>
 
-  <van-collapse value="{{ activeNames }}" bind:change="onChange_collapse">
-    <van-collapse-item title="关于人工维修服务" name="1">
-      内容1
+  <van-collapse accordion value="{{ activeNames }}" bind:change="onChange_collapse">
+    <van-collapse-item title="关于人工维修服务" name="1" >
+      <view style = "text-indent: 2em">对于在校教职工，我们提供校园范围内的电脑维修服务：收到您的维修需求后，我们会第一时间安排技术能力一流的维修人员主动联系您，协商上门维修的相关事宜；对于在校学生，我们会根据具体情况向您提供及时、可靠的电脑维修服务。无论是教职工还是学生，计协的维修服务一律不收取任何费用，当产生需要购买、更换零配件等的情况时，需要您决定是否继续维修且自行负担相关费用。</view>
     </van-collapse-item>
     <van-collapse-item title="维修范围" name="2">
-      内容2
+      <view style = "text-indent: 2em">包括但不限于：电脑系统问题（卡顿、蓝屏、死机等）、网络问题、简单硬件问题（音响没声音、麦克风收音问题、少量数据恢复）、电脑清灰、常用办公学习软件安装配置、加装内存、硬盘、电脑选购、装配服务等。</view>
+      <view style = "text-indent: 2em">\n不提供以下服务：电脑/手机贴膜、电脑/手机换屏、任何形式的出校服务、鼠标/键盘维修、大量且重要或涉密的数据恢复、过于老旧（2010年及更早生产）的电脑维修。</view>
     </van-collapse-item>
     <van-collapse-item title="责任声明" name="3">
-      内容3
+      <view style = "text-indent: 2em">计算机属于高精密设备，在长期使用的情况下容易出现各种隐疾，本协会特此声明：\n</view>
+      <view style = "text-indent: 2em">1.	请主动配合维修员提前查明电脑原始故障，如清灰时确保电脑可以正常开机使用。\n</view>
+      <view style = "text-indent: 2em">2. 请配合维修登记、说明故障类型。如有其它没有及时说明的故障，协会不对登记故障之外的问题负责。\n</view>
+      <view style = "text-indent: 2em">3.	对于非一线大厂（一线大厂指在京东有自营店铺的品牌）及老旧电脑（指五年前购得的电脑），需要进行拆机操作时具有较大的不确定因素，拆机后如出现意料之外的故障如不能开机、硬件故障等概不负责，请确认是否继续维修。\n</view>
+      <view style = "text-indent: 2em">4.	对于重装系统的需求请配合维修员协助备份个人数据，如有未说明的数据在重装后发生丢失概不负责。\n</view>
     </van-collapse-item>
   </van-collapse>
 

@@ -1,0 +1,36 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/choose/choose",
+          "pathName": "pages/choose/choose",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/form/form",
+          "pathName": "pages/form/form",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Feedback/Feedback",
+          "pathName": "pages/Feedback/Feedback",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<van-cell-group>
+  <text>这是一个评分组件</text>
+  <van-rate value="{{ value }}" bind:change="onChange" />
+</van-cell-group>
+
+<van-divider contentPosition="left" fontSize="16" textColor="#1989fa">这是一个分割线  </van-divider>
+
+<van-field
+      required
+      type = "textarea"
+      maxlength ="400"
+      show-word-limit
+      autosize
+      value="{{ description }}"
+      label="留言"
+    />

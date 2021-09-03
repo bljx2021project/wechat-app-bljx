@@ -1,12 +1,13 @@
 Page({
   data: {
-    name: '姓名   ',
-    id: '学号   ',
-    class: '班级   ',
-    phone: '手机号   ',
-    brand: '电脑品牌   ',
-    modelnumber: '电脑型号   ',
-    description: '故障描述   ',
+    name: '',
+    phone: '',
+    brand: '',
+    modelnumber: '',
+    description: '',
+    isStudent:false,
+    id: '',
+    class: '',
     fileList: [],
     steps: [
       {
@@ -52,7 +53,7 @@ Page({
   onLoad: function (options) {
     
   },
-  goFrom() {
+  goSuccess() {
     wx.navigateTo({
       url: '../success/success'
     })
