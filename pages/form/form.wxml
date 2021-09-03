@@ -2,68 +2,59 @@
 <van-divider contentPosition="left" fontSize="16" textColor="#1989fa">基本信息</van-divider>
 <van-cell-group>
   <van-field
-    value="{{ name }}"
-    placeholder="请输入姓名"
-    border="{{ false }}"
-    bind:change="onChange"
+    required
+    value="{{ username }}"
+    label="姓名"
   />
-</van-cell-group>
-<van-cell-group>
   <van-field
-    value="{{ id }}"
-    placeholder="请输入学号"
-    border="{{ false }}"
-    bind:change="onChange"
-  />
-</van-cell-group>
-<van-cell-group>
-  <van-field
-    value="{{ class }}"
-    placeholder="请输入班级"
-    border="{{ false }}"
-    bind:change="onChange"
-  />
-</van-cell-group>
-<van-cell-group>
-  <van-field
+    required
     value="{{ phone }}"
-    placeholder="请输入手机号"
-    border="{{ false }}"
-    bind:change="onChange"
+    label="手机号"
   />
+  <view wx:if="{{isStudent}}"> 
+    <van-field
+      required
+      value="{{ id }}"
+      label="学号"
+    />
+    <van-field
+      required
+      value="{{ class }}"
+      label="班级"
+    />
+  </view>
 </van-cell-group>
+
 <van-divider contentPosition="left" fontSize="16" textColor="#1989fa">维修信息</van-divider>
-<van-radio-group value="{{ radio }}" bind:change="onChange">
-  <van-radio name="1">笔记本电脑</van-radio>
-  <van-radio name="2">台式机</van-radio>
-</van-radio-group>
 <van-cell-group>
   <van-field
     value="{{ brand }}"
-    placeholder="请输入电脑品牌"
-    border="{{ false }}"
-    bind:change="onChange"
+    label="电脑品牌"
   />
-</van-cell-group>
-<van-cell-group>
   <van-field
     value="{{ modelnumber }}"
-    placeholder="请输入电脑型号"
-    border="{{ false }}"
-    bind:change="onChange"
+    label="电脑型号"
   />
-</van-cell-group>
-<van-cell-group>
   <van-field
-    value="{{ description }}"
-    placeholder="请输入故障描述"
-    border="{{ false }}"
-    bind:change="onChange"
-  />
+      required
+      type = "textarea"
+      maxlength ="400"
+      show-word-limit
+      autosize
+      value="{{ description }}"
+      label="故障描述"
+    />
 </van-cell-group>
-<text>上传故障照片</text>
-<text>\n</text>
-<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
-<text>\n</text>
-<button type="primary" form-type="submit">提交</button>
-<button type="default" form-type="reset">清空</button>
+
+<van-divider contentPosition="left" fontSize="16" textColor="#1989fa">上传故障照片</van-divider>
+<van-uploader
+  style="margin: 10px;"
+  file-list="{{ fileList }}"
+  bind:after-read="afterRead"
+  max-count="2"
+   />
+
+<view style="display:flex; flex-direction:row; min-height: 50px; padding: 10px; margin: 10px;">
+  <view style="flex: 4;"></view>
+  <van-button type="primary" size="normal" style=" flex: 2;" bind:click ="goSuccess">提交</van-button>
+</view>

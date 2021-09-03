@@ -1,19 +1,19 @@
 {
   "usingComponents": {
     "van-steps": "@vant/weapp/steps/index"
-    
-  },  
-  "pages":[
+  },
+  "pages": [
     "pages/QA/QA",
     "pages/form/form",
     "pages/choose/choose",
-    "pages/success/success"
+    "pages/success/success",
+    "pages/Feedback/Feedback"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
